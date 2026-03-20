@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Pricing | Klean Sweep Co. — Dallas Residential Cleaning</title>
+  <meta name="description" content="Klean Sweep Co. offers Basic Clean from $99, Detail Clean from $139, and Move-out Cleaning in Central Dallas. View full checklists and book your premium cleaning service today." />
+  <meta name="keywords" content="house cleaning prices Dallas, deep cleaning cost Dallas TX, move out cleaning Dallas, maid service pricing Dallas, residential cleaning checklist" />
+  <link rel="canonical" href="https://kleansweepco.com/services.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold:  { DEFAULT: '#C4A46B', light: '#D8C4A8', dark: '#9A7A48' },
+            dark:  { DEFAULT: '#1A1A1A', 800: '#222222', 700: '#2C2C2C', 600: '#3A3A3A' },
+            ivory: '#F5F3F0', stone: '#E0DDD8', muted: '#8A8886',
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            body: ['Jost', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Jost', sans-serif; color: #2C2C2C; background: #F5F3F0; font-size: 16px; line-height: 1.7; }
+    h1,h2,h3,h4,.font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+    #nav-bar { position:fixed; top:0; left:0; right:0; z-index:50; background:rgba(248,245,240,0.97); box-shadow:0 1px 24px rgba(0,0,0,0.08); backdrop-filter:blur(12px); }
+    .nav-link { font-size:0.7rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#3A3A3A; text-decoration:none; transition:color 0.2s; }
+    .nav-link:hover, .nav-link.active { color:#C4A46B; }
+
+    .page-hero {
+      position:relative; padding:10rem 1.5rem 5rem; text-align:center; overflow:hidden;
+      background-image: linear-gradient(160deg,rgba(20,16,10,0.55) 0%,rgba(22,18,10,0.40) 100%),
+        url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=85&fit=crop');
+      background-size:cover; background-position:center;
+    }
+    .section-eyebrow { font-family:'Jost',sans-serif; font-size:0.65rem; font-weight:500; letter-spacing:0.28em; text-transform:uppercase; color:#C4A46B; display:block; margin-bottom:1rem; }
+    .section-title { font-family:'Cormorant Garamond',serif; font-size:clamp(2.2rem,4vw,3.2rem); font-weight:400; color:#111111; line-height:1.15; }
+    .gold-rule { width:40px; height:1.5px; background:#C4A46B; }
+
+    .btn-gold { display:inline-block; background:#C4A46B; color:white; padding:0.85rem 2.5rem; font-size:0.7rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; text-decoration:none; border:none; cursor:pointer; transition:background 0.25s, transform 0.2s; }
+    .btn-gold:hover { background:#D8C4A8; transform:translateY(-2px); }
+    .btn-dark { display:inline-block; background:#111111; color:white; padding:0.85rem 2.5rem; font-size:0.7rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; text-decoration:none; border:none; cursor:pointer; transition:background 0.25s, transform 0.2s; }
+    .btn-dark:hover { background:#2C2C2C; transform:translateY(-2px); }
+    .btn-outline { display:inline-block; border:1px solid #C8C0B4; color:#3A3A3A; padding:0.85rem 2.5rem; font-size:0.7rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; text-decoration:none; transition:all 0.2s; }
+    .btn-outline:hover { border-color:#C4A46B; color:#C4A46B; }
+
+    .check-item { display:flex; align-items:flex-start; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid #F0EBE4; font-size:0.92rem; color:#3A3A3A; font-weight:300; }
+    .check-item:last-child { border-bottom:none; }
+    .check-icon { flex-shrink:0; width:16px; height:16px; color:#C4A46B; margin-top:1px; }
+
+    .pricing-card { background:white; border:1px solid #E0DDD8; overflow:hidden; transition:transform 0.3s, box-shadow 0.3s; }
+    .pricing-card:hover { transform:translateY(-4px); box-shadow:0 24px 56px rgba(0,0,0,0.08); }
+    .pricing-card.featured { border:1.5px solid #C4A46B; }
+    .pricing-card-header { padding:2.5rem 2.5rem 2rem; }
+    .pricing-card-body { padding:0 2.5rem 2.5rem; }
+
+    .addon-item { background:white; border:1px solid #E0DDD8; padding:1.75rem; text-align:center; transition:transform 0.3s, box-shadow 0.3s; }
+    .addon-item:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(0,0,0,0.07); }
+
+    .form-input { width:100%; border:none; border-bottom:1px solid #C8C0B4; background:transparent; padding:0.75rem 0; font-family:'Jost',sans-serif; font-size:0.95rem; color:#2C2C2C; outline:none; transition:border-color 0.2s; }
+    .form-input::placeholder { color:#A09890; }
+    .form-input:focus { border-bottom-color:#C4A46B; }
+    .form-label { font-size:0.62rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#8A8886; display:block; margin-bottom:0.25rem; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════ NAV (same as index) ════════ -->
+  <header id="nav-bar">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
+      <a href="index.html" style="text-decoration:none;" class="font-display font-semibold tracking-wide" style="font-size:1.25rem; color:#111111;">
+        <span style="font-family:'Cormorant Garamond',serif; font-size:1.25rem; color:#111111; font-weight:500; letter-spacing:0.03em;">Klean Sweep Co.</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="#contact" class="btn-gold" style="padding:0.65rem 1.6rem;">Book Now</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-6" style="background:#F5F3F0; border-top:1px solid #E0DDD8;">
+      <nav class="flex flex-col gap-5 pt-4">
+        <a href="index.html" style="text-decoration:none; color:#3A3A3A; font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:500;">Home</a>
+        <a href="services.html" style="text-decoration:none; color:#C4A46B; font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:500;">Services</a>
+        <a href="about.html" style="text-decoration:none; color:#3A3A3A; font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:500;">About</a>
+        <a href="faq.html" style="text-decoration:none; color:#3A3A3A; font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:500;">FAQ</a>
+        <a href="#contact" class="btn-gold text-center mt-2">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════ PAGE HERO ════════ -->
+    <div class="page-hero">
+      <span class="section-eyebrow" style="color:#D8C4A8;">Premium Residential Cleaning</span>
+      <h1 class="font-display text-white mb-4" style="font-size:clamp(2.8rem,6vw,5rem); font-weight:300; letter-spacing:0.01em;">Our Services</h1>
+      <p class="text-white/65 max-w-lg mx-auto" style="font-size:0.95rem; font-weight:300; line-height:1.8;">Transparent pricing. Meticulous execution. Every service is crafted to leave your home in its finest state.</p>
+    </div>
+
+    <!-- ════════ INTRO STRIP ════════ -->
+    <div class="py-12 px-6" style="background:white; border-bottom:1px solid #E0DDD8;">
+      <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+        <div>
+          <p class="text-muted text-sm leading-relaxed" style="font-weight:300; max-width:500px;">Our service plans are based on the average time it takes to clean a home the size of yours. We focus on your satisfaction, not the clock. Regular clients enjoy discounted rates as our team gets to know your home.</p>
+        </div>
+        <div class="flex-shrink-0">
+          <a href="#contact" class="btn-dark">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ PRICING CARDS ════════ -->
+    <section class="py-24 px-6" style="background:#F5F3F0;">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-16">
+          <span class="section-eyebrow">Pricing &amp; Packages</span>
+          <h2 class="section-title mb-4">Choose Your Level<br/>of <em>Clean</em></h2>
+          <div class="gold-rule mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+          <!-- ── BASIC CLEAN ── -->
+          <div class="pricing-card" id="basic">
+            <div class="pricing-card-header">
+              <span class="section-eyebrow">Essential</span>
+              <h3 class="font-display text-dark mb-2" style="font-size:2rem; font-weight:400;">Basic Clean</h3>
+              <p class="text-muted text-sm mb-5" style="font-weight:300; line-height:1.7;">Stay on top of your routine with consistent, reliable service covering all essential areas of your home or apartment.</p>
+              <div style="border-top:1px solid #E0DDD8; padding-top:1.25rem; margin-bottom:1.25rem;">
+                <p class="font-display" style="font-size:1.8rem; color:#111111; font-weight:300;">From <strong style="color:#C4A46B; font-weight:500;">$99</strong></p>
+                <p class="text-muted text-xs uppercase tracking-widest mt-1" style="letter-spacing:0.15em; font-weight:500;">Bi-weekly · 1 bed / 1 bath</p>
+              </div>
+              <p class="text-xs text-muted" style="font-weight:300; font-style:italic;">Does not include pantries, closets, laundry rooms, or stairwells — add-on fee applies to include these areas.</p>
+            </div>
+            <div class="pricing-card-body">
+              <p class="section-eyebrow mb-3">What's Included</p>
+              <div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust horizontal surfaces</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust countertop items &amp; décor</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust blinds &amp; window sills</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust furniture tops with soft bristle brush</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Bed straightening with existing linens</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Mirror cleaning</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Countertop cleaning &amp; sanitization</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clean &amp; sanitize sinks</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Polish plumbing fixtures</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clean &amp; sanitize showers &amp; bathtubs</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clean &amp; sanitize toilets</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Microwave cleaning (interior &amp; exterior)</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clean kitchen appliances (exterior)</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Empty &amp; reline waste baskets</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Sweep, vacuum carpets &amp; rugs</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Mop floors</div>
+              </div>
+              <a href="#contact" class="btn-outline w-full text-center block mt-8">Book Basic Clean</a>
+            </div>
+          </div>
+
+          <!-- ── DETAIL CLEAN ── -->
+          <div class="pricing-card featured" id="detail">
+            <div style="background:#C4A46B; padding:0.5rem 1.5rem; text-align:center;">
+              <span style="font-size:0.62rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#111111;">Most Popular Choice</span>
+            </div>
+            <div class="pricing-card-header">
+              <span class="section-eyebrow">Thorough</span>
+              <h3 class="font-display text-dark mb-2" style="font-size:2rem; font-weight:400;">Detail Clean</h3>
+              <p class="text-muted text-sm mb-5" style="font-weight:300; line-height:1.7;">For homes that deserve more attention — a comprehensive clean that tackles every surface, fixture, and forgotten corner.</p>
+              <div style="border-top:1px solid #E0DDD8; padding-top:1.25rem; margin-bottom:1.25rem;">
+                <p class="font-display" style="font-size:1.8rem; color:#111111; font-weight:300;">From <strong style="color:#C4A46B; font-weight:500;">$139</strong></p>
+                <p class="text-muted text-xs uppercase tracking-widest mt-1" style="letter-spacing:0.15em; font-weight:500;">Bi-weekly · 1 bed / 1 bath</p>
+              </div>
+              <p class="text-xs text-muted" style="font-weight:300; font-style:italic;">Includes everything in the Basic Clean, <em>plus</em> all of the following.</p>
+            </div>
+            <div class="pricing-card-body">
+              <p class="section-eyebrow mb-3">Everything in Basic, Plus</p>
+              <div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Ceiling fan dusting</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Light fixture dusting</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust wall art</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Door frame dusting</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Baseboard dusting</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>A/C vent dusting</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Cobweb removal</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Linen changing &amp; refreshing of bedding</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Spot-clean kitchen &amp; bathroom cabinet fronts</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clean kitchen backsplash</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clean all high-touch points (handles, switches)</div>
+              </div>
+              <a href="#contact" class="btn-gold w-full text-center block mt-8">Book Detail Clean</a>
+            </div>
+          </div>
+
+          <!-- ── MOVE-OUT CLEAN ── -->
+          <div class="pricing-card" id="moveout">
+            <div class="pricing-card-header">
+              <span class="section-eyebrow">Specialized</span>
+              <h3 class="font-display text-dark mb-2" style="font-size:2rem; font-weight:400;">Move-out Clean</h3>
+              <p class="text-muted text-sm mb-5" style="font-weight:300; line-height:1.7;">Leave your old home spotless or welcome a new one in pristine condition — a complete top-to-bottom final clean.</p>
+              <div style="border-top:1px solid #E0DDD8; padding-top:1.25rem; margin-bottom:1.25rem;">
+                <p class="font-display" style="font-size:1.8rem; color:#111111; font-weight:300;"><strong style="color:#C4A46B; font-weight:500;">Call for Estimate</strong></p>
+                <p class="text-muted text-xs uppercase tracking-widest mt-1" style="letter-spacing:0.15em; font-weight:500;">Flexible scheduling</p>
+              </div>
+              <div class="text-xs text-muted space-y-1" style="font-weight:300; font-style:italic;">
+                <p>Home must be clear of personal belongings and trash.</p>
+                <p>Utilities must still be active at time of service.</p>
+                <p>Payment required prior to start of service.</p>
+              </div>
+            </div>
+            <div class="pricing-card-body">
+              <p class="section-eyebrow mb-3">Full Deep Clean Includes</p>
+              <div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust &amp; wipe interior windows, blinds &amp; sills</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust &amp; wipe ceiling fans &amp; light fixtures</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Wipe down all baseboards</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dust &amp; wipe interior of all cabinets &amp; drawers</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Wipe down all cabinet &amp; drawer fronts</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Sanitize all countertops &amp; backsplashes</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Sanitize shower, tub, toilets, sinks &amp; fixtures</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Vacuum, sweep &amp; mop all floors</div>
+                <div class="check-item"><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Clean interior &amp; exterior of all appliances</div>
+              </div>
+              <a href="tel:4693364488" class="btn-outline w-full text-center block mt-8">Call for Estimate</a>
+            </div>
+          </div>
+
+        </div><!-- end grid -->
+      </div>
+    </section>
+
+    <!-- ════════ PAYMENT & POLICIES STRIP ════════ -->
+    <section class="py-16 px-6" style="background:#111111;">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+        <div>
+          <div class="flex justify-center mb-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <h4 class="font-display text-white mb-2" style="font-size:1.2rem; font-weight:400;">Payment Methods</h4>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.88rem; font-weight:300; line-height:1.7;">We accept Zelle, Apple Pay, and cash. Payment is due at the time of service for Basic and Detail cleans.</p>
+        </div>
+        <div>
+          <div class="flex justify-center mb-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4 class="font-display text-white mb-2" style="font-size:1.2rem; font-weight:400;">Cancellation Policy</h4>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.88rem; font-weight:300; line-height:1.7;">Modify or cancel up to 48 hours prior at no charge. Changes within 48 hours carry a $50 fee.</p>
+        </div>
+        <div>
+          <div class="flex justify-center mb-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 class="font-display text-white mb-2" style="font-size:1.2rem; font-weight:400;">Satisfaction Guaranteed</h4>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.88rem; font-weight:300; line-height:1.7;">Not satisfied? Send a photo within 24 hours and we'll make it right at no extra charge.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ ADD-ON SERVICES ════════ -->
+    <section class="py-24 px-6" style="background:white;" id="addons">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="section-eyebrow">Go Further</span>
+          <h2 class="section-title mb-4">Add-on Services</h2>
+          <div class="gold-rule mx-auto mb-6"></div>
+          <p class="text-muted text-sm max-w-xl mx-auto" style="font-weight:300; line-height:1.8;">Need to delegate more chores? Layer on exactly what your home needs. Don't see what you're looking for? Just ask — we'll do our best to accommodate.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><path d="M21 6H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"/><path d="M1 10h22"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Laundry Service</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Wash, dry, fold, and put away</p>
+          </div>
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Organization</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Declutter, sort &amp; organize any space</p>
+          </div>
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Refrigerator</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Interior deep clean &amp; sanitize</p>
+          </div>
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="9" cy="9" r="1.5"/><circle cx="15" cy="9" r="1.5"/><path d="M9 15h6"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Oven Cleaning</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Interior degreasing &amp; clean</p>
+          </div>
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Dish Washing</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Hand-wash &amp; dry your dishes</p>
+          </div>
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><path d="M3 4h18v2H3zM5 6v14h14V6"/><path d="M9 10h6"/><path d="M9 14h6"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Interior Cabinets</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Wipe all interior cabinet shelves</p>
+          </div>
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16"/><path d="M4 14h16"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Interior Drawers</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Wipe all interior drawer surfaces</p>
+          </div>
+
+          <div class="addon-item">
+            <div class="flex justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4A46B" stroke-width="1.5" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h4 class="font-display text-dark mb-2" style="font-size:1.1rem; font-weight:400;">Special Projects</h4>
+            <p class="text-muted" style="font-size:0.86rem; font-weight:300; line-height:1.6;">Just ask — we'll tailor a solution</p>
+          </div>
+
+        </div>
+
+        <p class="text-center text-muted text-sm mt-10" style="font-weight:300;">Add-on pricing varies by scope. <a href="#contact" style="color:#C4A46B; text-decoration:none; border-bottom:1px solid rgba(184,146,74,0.3);">Request a custom quote →</a></p>
+      </div>
+    </section>
+
+    <!-- ════════ DISCOUNT CALLOUT ════════ -->
+    <section class="py-20 px-6" style="background:#F5F3F0;">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="section-eyebrow">Loyalty &amp; Savings</span>
+          <h2 class="section-title mb-5">We Reward<br/><em>Our Regulars</em></h2>
+          <div class="gold-rule mb-8"></div>
+          <p class="text-muted text-sm leading-relaxed mb-5" style="font-weight:300;">We offer a variety of special discounts for regularly scheduled customers, referrals, and clients who choose to provide their own cleaning supplies and equipment. This is our way of thanking you for inviting us into your home and trusting us as your preferred cleaning partner.</p>
+          <p class="text-muted text-sm leading-relaxed" style="font-weight:300;">Regular cleanings also allow our team to become familiar with your home — meaning cleanings are faster, more efficient, and your rate stays lower. That's why weekly, bi-weekly, or monthly service costs less than a first-time clean.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="text-center p-8 bg-white" style="border:1px solid #E0DDD8;">
+            <p class="font-display text-dark mb-2" style="font-size:2.5rem; font-weight:300; color:#C4A46B;">%</p>
+            <p class="text-xs uppercase tracking-widest font-medium" style="letter-spacing:0.15em; color:#3A3A3A;">Recurring<br/>Discounts</p>
+          </div>
+          <div class="text-center p-8 bg-white" style="border:1px solid #E0DDD8;">
+            <p class="font-display text-dark mb-2" style="font-size:2.5rem; font-weight:300; color:#C4A46B;">$</p>
+            <p class="text-xs uppercase tracking-widest font-medium" style="letter-spacing:0.15em; color:#3A3A3A;">Referral<br/>Rewards</p>
+          </div>
+          <div class="text-center p-8 bg-white" style="border:1px solid #E0DDD8;">
+            <p class="font-display text-dark mb-2" style="font-size:2.5rem; font-weight:300; color:#C4A46B;">★</p>
+            <p class="text-xs uppercase tracking-widest font-medium" style="letter-spacing:0.15em; color:#3A3A3A;">Service<br/>Credits</p>
+          </div>
+          <div class="text-center p-8 bg-white" style="border:1px solid #E0DDD8;">
+            <p class="font-display text-dark mb-2" style="font-size:2.5rem; font-weight:300; color:#C4A46B;">♻</p>
+            <p class="text-xs uppercase tracking-widest font-medium" style="letter-spacing:0.15em; color:#3A3A3A;">Your Supplies<br/>Discount</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ CONTACT FORM ════════ -->
+    <section id="contact" class="py-24 px-6" style="background:#111111;">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <span class="section-eyebrow" style="color:#D8C4A8;">Ready to Begin?</span>
+          <h2 class="font-display text-white mb-5" style="font-size:clamp(2rem,4vw,3rem); font-weight:300; line-height:1.2;">Request Your<br/><em style="color:#C4A46B;">Free Quote</em></h2>
+          <p style="color:rgba(255,255,255,0.55); font-size:0.93rem; font-weight:300; line-height:1.8; margin-bottom:2rem;">Tell us about your home and we'll prepare a personalized quote — transparent pricing, no surprises. We respond within one business day.</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4">
+              <div style="width:2px; height:36px; background:#C4A46B; flex-shrink:0;"></div>
+              <div>
+                <p class="text-white text-sm font-medium">469-336-4488</p>
+                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); font-weight:300;">Call or text anytime M–F, 9am–5pm</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div style="width:2px; height:36px; background:#C4A46B; flex-shrink:0;"></div>
+              <div>
+                <p class="text-white text-sm font-medium">kleansweepco@gmail.com</p>
+                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); font-weight:300;">We respond within 1 business day</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form onsubmit="handleFormSubmit(event)" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); padding:2.5rem;">
+          <div class="grid grid-cols-2 gap-x-6 gap-y-7 mb-7">
+            <div>
+              <label class="form-label" style="color:rgba(255,255,255,0.5);">First Name</label>
+              <input class="form-input" style="color:white; border-bottom-color:rgba(255,255,255,0.2);" type="text" name="first_name" placeholder="Jane" required />
+            </div>
+            <div>
+              <label class="form-label" style="color:rgba(255,255,255,0.5);">Last Name</label>
+              <input class="form-input" style="color:white; border-bottom-color:rgba(255,255,255,0.2);" type="text" name="last_name" placeholder="Smith" required />
+            </div>
+            <div>
+              <label class="form-label" style="color:rgba(255,255,255,0.5);">Phone</label>
+              <input class="form-input" style="color:white; border-bottom-color:rgba(255,255,255,0.2);" type="tel" name="phone" placeholder="(469) 000-0000" required />
+            </div>
+            <div>
+              <label class="form-label" style="color:rgba(255,255,255,0.5);">Email</label>
+              <input class="form-input" style="color:white; border-bottom-color:rgba(255,255,255,0.2);" type="email" name="email" placeholder="jane@email.com" required />
+            </div>
+            <div style="grid-column:1/-1;">
+              <label class="form-label" style="color:rgba(255,255,255,0.5);">Service Type</label>
+              <select class="form-input" style="color:white; border-bottom-color:rgba(255,255,255,0.2); background:transparent;" name="service" required>
+                <option value="" disabled selected style="color:#8A8886; background:#111111;">Select a service…</option>
+                <option value="basic" style="color:#111111; background:white;">Basic Clean — From $99</option>
+                <option value="detail" style="color:#111111; background:white;">Detail Clean — From $139</option>
+                <option value="moveout" style="color:#111111; background:white;">Move-out Clean</option>
+                <option value="addon" style="color:#111111; background:white;">Add-on Services</option>
+                <option value="unsure" style="color:#111111; background:white;">Not Sure Yet</option>
+              </select>
+            </div>
+            <div style="grid-column:1/-1;">
+              <label class="form-label" style="color:rgba(255,255,255,0.5);">Message</label>
+              <textarea class="form-input" style="color:white; border-bottom-color:rgba(255,255,255,0.2); resize:none;" name="message" rows="3" placeholder="Bedrooms, sq ft, pets, preferred days…"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-gold w-full" style="cursor:pointer;">Request a Quote</button>
+          <p style="text-align:center; font-size:0.72rem; color:rgba(255,255,255,0.3); margin-top:1rem; font-weight:300;">We respond within 1 business day</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:#0A0A0A; color:rgba(255,255,255,0.55);">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-14 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div>
+        <div class="font-display text-white font-medium mb-4" style="font-size:1.3rem;">Klean Sweep Co.</div>
+        <p class="text-sm leading-relaxed mb-5" style="font-weight:300;">Premium residential cleaning in Central Dallas. Your home is your sanctuary.</p>
+        <div style="width:32px; height:1px; background:#C4A46B;"></div>
+        <p class="text-xs mt-4 uppercase tracking-widest" style="color:#C4A46B; letter-spacing:0.2em;">Dallas Design District, TX</p>
+      </div>
+      <div>
+        <h3 class="text-xs uppercase tracking-widest font-medium mb-5" style="color:rgba(255,255,255,0.8); letter-spacing:0.2em;">Navigation</h3>
+        <ul class="space-y-3">
+          <li><a href="index.html" class="text-sm hover:text-white transition-colors" style="text-decoration:none; font-weight:300;">Home</a></li>
+          <li><a href="services.html" class="text-sm hover:text-white transition-colors" style="text-decoration:none; font-weight:300; color:rgba(255,255,255,0.8);">Services &amp; Pricing</a></li>
+          <li><a href="about.html" class="text-sm hover:text-white transition-colors" style="text-decoration:none; font-weight:300;">About Us</a></li>
+          <li><a href="faq.html" class="text-sm hover:text-white transition-colors" style="text-decoration:none; font-weight:300;">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xs uppercase tracking-widest font-medium mb-5" style="color:rgba(255,255,255,0.8); letter-spacing:0.2em;">Contact</h3>
+        <ul class="space-y-3 text-sm" style="font-weight:300;">
+          <li><a href="tel:4693364488" class="hover:text-white transition-colors" style="text-decoration:none;">469-336-4488</a></li>
+          <li>kleansweepco@gmail.com</li>
+          <li>Mon – Friday, 9am – 5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5" style="border-top:1px solid rgba(255,255,255,0.06);">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="color:rgba(255,255,255,0.28);">
+        <p>© 2026 Klean Sweep Co. All rights reserved.</p>
+        <p>Locally owned &amp; operated — Dallas, TX</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type="submit"]');
+      btn.textContent = 'Thank You — We\'ll Be in Touch!';
+      btn.style.background = 'rgba(255,255,255,0.15)';
+      btn.style.color = 'white';
+      btn.disabled = true;
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>

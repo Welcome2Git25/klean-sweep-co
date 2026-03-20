@@ -1,0 +1,10 @@
+# Environment / secrets
+.env
+
+# Raw AI-generated source files (large, not needed in repo)
+images/*-raw.png
+images/hero-ai-4k.png
+images/hero-ai-hero.jpg
+
+# Screenshots / misc
+screencapture-*.png

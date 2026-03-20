@@ -1,6 +1,6 @@
 # Klean Sweep Co. — Website Task Sheet
 
-## Status: In Progress — Active Iteration
+## Status: In Progress — Paused After Session 2
 **Last updated:** 2026-03-19
 
 ---
@@ -8,68 +8,67 @@
 ## Completed
 
 ### Foundation
-- [x] Build full 4-page static site (index, services, about, faq)
-- [x] Luxury font system — Cormorant Garamond + Jost
-- [x] Full color system — warm luxury palette (champagne gold `#C4A46B`, near-black `#111111`, cream `#F5F3F0`)
-- [x] Sticky nav with scroll effect (transparent → cream)
-- [x] SEO: Schema.org JSON-LD, unique titles + meta descriptions per page
-- [x] Inline contact forms on all 4 pages (static)
-- [x] 9-review testimonial carousel (3 slides)
-- [x] FAQ accordion (23 questions, 3 sections)
-- [x] 3-card service grid with checklists + 8 add-on services
-- [x] Trust bar (4 stats) — dark section
-- [x] Footer — dark near-black across all pages
+- [x] 4-page static site (index, services, about, faq)
+- [x] Cormorant Garamond + Jost font system
+- [x] Color system — champagne gold `#C4A46B`, near-black `#111111`, cool cream `#F5F3F0`
+- [x] Sticky nav, FAQ accordion, testimonial carousel (9 reviews, 3 slides)
+- [x] Trust bar, service cards, add-on grid, inline contact forms
+- [x] SEO: Schema.org JSON-LD, unique titles + meta descriptions
+- [x] `.gitignore`, `HANDOFF.md`, `TASKS.md`, `CLAUDE.md`
+- [x] GitHub: https://github.com/Welcome2Git25/klean-sweep-co
 
 ### Visual Polish
-- [x] Star rating color fix (warm gold, not teal)
-- [x] Trust bar subtext contrast fix
-- [x] Button text contrast fix (white on gold)
-- [x] Full color palette overhaul → cooler, more architectural (matches IMG_8793 reference)
+- [x] Full color palette overhaul → cooler, architectural (matches reference apartment)
+- [x] Typography bump — all small text increased for readability across all 4 pages
+- [x] Services page — Loyalty section cleaned up (only Recurring Discounts + Referral Rewards)
+- [x] "Move from Customer to Client." subheading added under loyalty section headline
 
-### Hero Image (AI-Generated via kie.ai Nano Banana 2)
-- [x] v1 — wide city skyline shot
-- [x] v2 — close-up sofa with olive pillow + chocolate throw
-- [x] v3 — full room, lounge chairs, fiddle leaf, gallery wall
-- [x] **v4 — CURRENT** — barrel chairs, sculptural walnut coffee table, contemporary art, brass ring dining pendant, ultra-wide diagonal angle, portfolio-grade
+### Hero Image (AI via kie.ai Nano Banana 2)
+- [x] v1–v6 iterations (see HANDOFF.md for full history)
+- [x] **v7 — CURRENT HERO** (`images/hero-v7.jpg`)
+  - 4K, 4096×2304, 1.2MB
+  - Diagonal wide-angle, Dallas skyline with Reunion Tower
+  - Cream bouclé sofa, chocolate throw, olive pillow, barrel chairs
+  - Sculptural live-edge walnut coffee table, contemporary art, fiddle leaf fig
+  - Bare dining table, brass ring pendant, portfolio-grade
 
 ### Infrastructure
-- [x] `.env` file with `KIE_API_KEY`
-- [x] `.gitignore` — excludes `.env` and raw PNG source files
-- [x] `HANDOFF.md` — full project documentation
-- [x] `TASKS.md` — this file
-- [x] Curated image library (`images/`) — 9 luxury interior reference photos
-- [x] GitHub repo: https://github.com/Welcome2Git25/klean-sweep-co
+- [x] kie.ai API integration (`nano-banana-2` model)
+- [x] File upload via `kieai.redpandaai.co/api/file-stream-upload`
+- [x] PowerShell 4K crop pipeline (4096×4096 → 4096×2304 JPEG)
+- [x] `.env` with `KIE_API_KEY` (not committed)
+- [x] 9 curated luxury interior reference images in `images/`
 
 ---
 
 ## To Do
 
 ### High Priority (Before Launch)
-- [ ] Connect contact form to real backend (Formspree or similar)
-- [ ] Real logo / wordmark (currently text-only)
-- [ ] Mobile QA — review all 4 pages on phone viewport
+- [ ] Connect contact form to Formspree or similar — currently static, no submissions received
+- [ ] Real logo / wordmark — currently text-only "Klean Sweep Co."
+- [ ] Mobile QA — review all 4 pages on phone viewport (untested)
 
 ### Medium Priority
-- [ ] Google Maps embed on about.html (service area)
-- [ ] Before/after cleaning photo section
-- [ ] Booking/Quote page or Calendly embed
-- [ ] Team photo on about.html
+- [ ] Google Maps embed on `about.html` (service area visual)
+- [ ] Before/after cleaning photo section on home or services page
+- [ ] Booking page or Calendly embed for scheduling
+- [ ] Team photo on `about.html`
 
-### Hero Image Iteration (Ongoing)
-- [ ] Continue refining hero image prompt as needed
-- [ ] Potentially generate unique images for services.html and about.html heroes
+### Hero / Images (Ongoing — Optional)
+- [ ] Generate unique hero images for `services.html` and `about.html` pages (currently use Unsplash)
+- [ ] Consider generating a before/after pair using `nano-banana-edit`
 
 ### Nice to Have
-- [ ] Blog / tips page
-- [ ] Instagram feed embed
 - [ ] Animated counter on trust bar stats (counts up on scroll)
 - [ ] Scroll-triggered fade-ins on section cards
+- [ ] Blog / tips page
+- [ ] Instagram feed embed
 
 ---
 
 ## Deploy Checklist (When Ready)
-- [ ] Buy / point domain to hosting
+- [ ] Buy / connect domain
 - [ ] Deploy via Netlify or Vercel
-- [ ] Set canonical URLs on all pages
+- [ ] Set `<link rel="canonical">` URLs on all pages
 - [ ] Submit sitemap to Google Search Console
-- [ ] Verify Google My Business links to live site
+- [ ] Link Google My Business listing to live site
